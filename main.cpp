@@ -1,10 +1,11 @@
-#include <iostream>
+#include <stdio.h>
+#include "gtest/gtest.h"
 
-using namespace std;
-
-int main()
+int fun(int a)
 {
-    cout << "Hello World!" << endl;
-    return 0;
+    return a;
 }
-
+TEST(FUN_TEST, TEST)
+{
+    EXPECT_EQ(1, fun(1));
+}
