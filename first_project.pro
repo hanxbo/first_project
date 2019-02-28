@@ -8,5 +8,9 @@ LIBS +=  /usr/local/lib/libgtest.a
 LIBS +=  /usr/local/lib/libgtest_main.a
 LIBS += -pthread
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    sample.cpp
+
+HEADERS += \
+    includes.h
 

@@ -13,6 +13,7 @@ int main(void)
 {
     pthread_t sample_id;
 
+    
     if(0 != pthread_create(&sample_id, NULL, sample_data, NULL))
     {
         perror("create sample thread");
