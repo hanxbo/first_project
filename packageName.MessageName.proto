@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package socket_package;
+
+message cmd_type
+{
+		required int32      id = 1;
+		required string     str = 2;
+
+}
